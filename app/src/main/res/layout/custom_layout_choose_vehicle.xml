@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/ll_image1"
+            android:background="#979390"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+            <ImageView
+                android:layout_width="match_parent"
+android:id="@+id/iv_image_ch"
+                android:src="@drawable/car"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/ll_car"
+            android:background="#DAD4D4"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car"
+                android:id="@+id/tv_chh_name"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/lato_bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

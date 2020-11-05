@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back_colour"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BikeNCarBatteries">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/orange"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/iv_batteries"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.06"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:text="Bike \u0026 Car Batteries"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="0.94"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="@color/orange"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="Bike"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:background="@color/darkorange"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="Car"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_batteries"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

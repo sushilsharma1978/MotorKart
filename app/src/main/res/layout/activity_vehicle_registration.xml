@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back_colour"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".VehicleRegistration">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/orange"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/iv_registerv"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.06"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:text="Enter Registration Number"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/tl_vhicle"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="0.94"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+
+            android:orientation="vertical"
+            android:layout_weight="0.92">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="VEHICLE TYPE: "
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/lato_bold"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="VEHICLE TYPE: "
+                    android:textSize="16dp"
+                    android:id="@+id/tv_v_type"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="BRAND: "
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/lato_bold"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="VEHICLE TYPE: "
+                    android:textSize="16dp"
+                    android:id="@+id/tv_v_brand"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="MODEL: "
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/lato_bold"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="VEHICLE TYPE: "
+                    android:textSize="16dp"
+                    android:id="@+id/tv_v_model"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="FUEL: "
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/lato_bold"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" "
+                    android:textSize="16dp"
+                    android:id="@+id/tv_v_fuel"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/ed_rgno"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="start"
+                        android:paddingLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:hint="Registration number"
+                        android:fontFamily="@font/lato_regular"
+                        android:inputType="textEmailAddress"
+                        android:textSize="15dp" />
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/ed_rgname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="start"
+                        android:paddingLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:hint="Owner's name"
+                        android:fontFamily="@font/lato_regular"
+                        android:inputType="textEmailAddress"
+                        android:textSize="15dp" />
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnn_add_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/button_black"
+                    android:textAllCaps="false"
+                    android:text="A D D  V E H I C L E"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pb_vreg"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/container"
+
+                android:background="@color/back_colour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/frame_container"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/btnav_view06"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+                    app:itemTextAppearanceInactive="@style/BottomNavigationView"
+                    app:labelVisibilityMode="labeled"
+                    app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+                    app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+                    android:background="@color/orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:menu="@menu/bottom_nav_menu" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_colour"
+    android:layout_height="match_parent"
+    tools:context=".PartStore_Location">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/orange"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/iv_partloc_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.03"
+                    android:padding="3dp"
+                    android:src="@drawable/back_arrow" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Part Store"
+                    android:id="@+id/txt_tool2"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.87"/>
+                <ImageView
+                    android:id="@+id/iv_ratelist"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/price_iconn" />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.92">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:background="@android:color/white"
+                    android:layout_margin="15dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Center No. :"
+                            android:fontFamily="@font/lato_bold"
+                            android:textSize="16dp"
+                            android:textColor="#5a5a5a"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_loc_cntrno"
+                            android:fontFamily="@font/lato_regular"
+                            android:textSize="16dp"
+                            android:textColor="#8B8A8A"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Email :"
+                            android:fontFamily="@font/lato_bold"
+                            android:textSize="16dp"
+                            android:textColor="#5a5a5a"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_loc_email"
+                            android:fontFamily="@font/lato_regular"
+                            android:textSize="16dp"
+                            android:textColor="#8B8A8A"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Mobile :"
+                            android:fontFamily="@font/lato_bold"
+                            android:textSize="16dp"
+                            android:textColor="#5a5a5a"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_loc_mobile"
+                            android:fontFamily="@font/lato_regular"
+                            android:textSize="16dp"
+                            android:textColor="#8B8A8A"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Timings :"
+                            android:fontFamily="@font/lato_bold"
+                            android:textSize="16dp"
+                            android:textColor="#5a5a5a"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_loc_timing"
+                            android:fontFamily="@font/lato_regular"
+                            android:textSize="16dp"
+                            android:textColor="#8B8A8A"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Address :"
+                            android:fontFamily="@font/lato_bold"
+                            android:textSize="16dp"
+                            android:textColor="#5a5a5a"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/lato_regular"
+                            android:textSize="16dp"
+                            android:id="@+id/tv_loc_address"
+                            android:textColor="#8B8A8A"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Location :"
+                            android:fontFamily="@font/lato_bold"
+                            android:textSize="17dp"
+                            android:textColor="#5a5a5a"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <!-- <fragment
+                             android:id="@+id/map"
+                             android:name="com.google.android.gms.maps.MapFragment"
+                             android:layout_width="fill_parent"
+                             android:layout_height="200dp" />-->
+
+                        <fragment
+                            android:id="@+id/fg_map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+               <!-- <LinearLayout
+                    android:id="@+id/txtt2"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:layout_margin="15dp"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="RATE LIST"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:background="@color/orange"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv_ratelist"/>
+
+
+
+
+
+                </LinearLayout>-->
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/txtt"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:layout_margin="15dp"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="STORE IMAGES"
+                        android:textColor="@android:color/white"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:background="@color/orange"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp">
+                        <androidx.viewpager.widget.ViewPager
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/vw_storeimages"/>
+
+                        <me.relex.circleindicator.CircleIndicator
+                            android:id="@+id/indicator2"
+                            android:layout_gravity="bottom"
+                            app:ci_drawable="@drawable/selected_colour"
+                            app:ci_drawable_unselected="@drawable/unselected_colour"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+                    </FrameLayout>
+
+                    <!--<androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_part_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp" />-->
+                </LinearLayout>
+            </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.08">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/container"
+
+                    android:background="@color/back_colour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/frame_container"
+                        android:layout_height="match_parent">
+
+                    </FrameLayout>
+
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/btnav_view3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+                        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+                        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+                        app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+                        app:labelVisibilityMode="labeled"
+                        android:background="@color/orange"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:menu="@menu/bottom_nav_menu" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

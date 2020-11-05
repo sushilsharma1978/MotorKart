@@ -1,0 +1,8 @@
+keystore path:
+D:\BRILL INFOSYSTEMS\MotorKart\motorkeystorenew.jks
+
+password:brill12345
+
+key alias:brill
+key password:brill123456
+Org Unit:Brill Infosystems

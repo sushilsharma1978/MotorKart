@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ChooseVehicle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/orange"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/iv_vehicle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.06"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:text="Choose Your Vehicle"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="0.94"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_weight="0.92">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/rv_choosevehicles"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <ProgressBar
+                        android:id="@+id/pb_ch_vehicle"
+                        android:layout_width="30dp"
+                        android:visibility="gone"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/container"
+
+                android:background="@color/back_colour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/frame_container"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/btnav_view01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+                    app:itemTextAppearanceInactive="@style/BottomNavigationView"
+                    app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+                    app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+                    android:layout_marginEnd="0dp"
+                    app:labelVisibilityMode="labeled"
+                    android:background="@color/orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:menu="@menu/bottom_nav_menu" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+    android:weightSum="1"
+android:background="@android:color/white"
+android:layout_height="match_parent"
+tools:context=".OTPActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/orange"
+        android:layout_weight="0.3"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato_light"
+            android:gravity="center"
+            android:text="Enter your 4 digit One Tiime Password\n(OTP) sent to your mobile number"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_marginTop="70dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:text="9682128426"
+                    android:textSize="16dp"
+                    android:id="@+id/tv_mobileno"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:background="@drawable/loginbutton_back"
+                android:src="@drawable/pencil_white"
+                android:padding="8dp"
+                android:id="@+id/iv_edit_mobile"
+                android:layout_marginLeft="10dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/otp_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:itemBackground="@android:color/white"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/darkorange"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="4"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="15dp"
+            app:itemWidth="48dp"
+            app:lineColor="@color/darkorange"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
+
+
+        <!--  <com.mukesh.OtpView
+              android:id="@+id/otp_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="number"
+              app:otp="1234"
+              android:itemBackground="@color/orange"
+              android:textColor="@android:color/black"
+              app:itemCount="4"
+              app:lineColor="@color/colorPrimary"
+              app:viewType="line" />
+      -->
+
+        <!--<com.goodiebag.pinview.Pinview
+            android:id="@+id/otp_view"
+            app:pinBackground="@drawable/loginbutton_back"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="4"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="text"
+            app:password="false"/>-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button_black"
+            android:fontFamily="@font/lato_bold"
+            android:text="S U B M I T"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_resendotp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_light"
+            android:text="Resend OTP"
+            android:textColor="@color/darkorange"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/pb_login3"
+            android:layout_width="30dp"
+            android:visibility="gone"
+            android:layout_height="30dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

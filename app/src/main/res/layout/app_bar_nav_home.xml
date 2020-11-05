@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreeeen">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_menuu"
+                android:layout_width="0dp"
+                android:layout_weight="0.06"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_menu_black_24dp"/>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="0.62"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="MotorKart"/>
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.32"
+                android:gravity="center"
+                android:layout_gravity="right|end"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Your location"
+                    android:textColor="#F7F4F4"
+                    android:textSize="8dp"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+
+                </TextView>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_white_24dp"
+                    android:layout_height="wrap_content"
+                     android:id="@+id/spinner_location"
+                    android:textSize="14dp"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@drawable/ic_location_on_white_24dp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/tv_change_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:text="Change"
+                    android:visibility="gone"
+                    android:textColor="#FCFCFC"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_nav_home" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/container"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frame_container"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+            app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+            app:labelVisibilityMode="labeled"
+            app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+            android:background="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

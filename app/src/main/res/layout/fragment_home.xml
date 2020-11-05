@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:background="@color/orange">
+
+                <EditText
+                    android:id="@+id/ed_search_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:background="@drawable/search_editback"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vw_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+                    app:ci_drawable="@drawable/selected_colour"
+                    app:ci_drawable_unselected="@drawable/unselected_colour" />
+            </FrameLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="#EEE9E4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Registration No.: "
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tv_bike_rgno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No Data"
+                                android:textColor="#363432"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Previous Service: "
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tv_bike_prsv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No Data"
+
+                                android:textColor="#363432"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Next Service: "
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="30-1-2020"
+                                android:textColor="#363432"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#1A1717"
+                        android:gravity="center"
+                        android:text="Two Wheeler Vehicle"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Registration No.: "
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tv_car_rgno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="No Data"
+                                android:textColor="#363432"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Previous Service: "
+                                android:textColor="@android:color/black"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tv_car_pvsv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No Data"
+                                android:textColor="#363432"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Next Service: "
+                                android:textColor="@android:color/black"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="30-1-2020"
+                                android:textColor="#363432"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#706868"
+                        android:gravity="center"
+                        android:text="Four Wheeler Vehicle"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Nearby me"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="0.07dp"
+                android:layout_marginTop="5dp"
+                android:background="#A7A4A3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_height="120dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.99"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/ll_partstore"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PART STORE"
+                            android:textSize="12dp"
+                            android:textColor="@color/darkorange"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/part_store"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="0.07dp"
+                    android:layout_height="match_parent"
+                    android:background="#A7A4A3"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.99"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_servicecntr"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SERVICE CENTRES"
+                            android:textSize="12dp"
+                            android:textColor="@color/darkorange"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/service_centres"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="0.07dp"
+                    android:layout_height="match_parent"
+                    android:background="#A7A4A3"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_alignmentcntr"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ALIGNMENT CENTRES"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:textColor="@color/darkorange"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/alignmnent_centres"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.07dp"
+                android:background="#A7A4A3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_height="120dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.99"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_washingpts"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WASHING POINTS"
+                            android:textSize="12dp"
+                            android:textColor="@color/darkorange"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/washing_points"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="0.07dp"
+                    android:layout_height="match_parent"
+                    android:background="#A7A4A3"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.99"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_tyrestore"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TYRES STORE"
+                            android:textSize="12dp"
+                            android:textColor="@color/darkorange"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/tyre_store"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="0.07dp"
+                    android:layout_height="match_parent"
+                    android:background="#A7A4A3"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_engineoil"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                      >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="ENGINE OIL \u0026 LUBRICANTS"
+                            android:textColor="@color/darkorange"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/engine_oil"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.07dp"
+
+                android:background="#A7A4A3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_height="120dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.99"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/ll_tools"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="TOOLS \u0026 EQUIPMENTS"
+                            android:textColor="@color/darkorange"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/tools"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="0.07dp"
+                    android:layout_height="match_parent"
+                    android:background="#A7A4A3"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.99"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_bikecar"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BIKE \u0026 CAR ACCESSORIES"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:textColor="@color/darkorange"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/car_accessories"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="0.07dp"
+                    android:layout_height="match_parent"
+                    android:background="#A7A4A3"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_batteries"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                       >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BATTERIES"
+                            android:textSize="12dp"
+                            android:textColor="@color/darkorange"
+                            android:layout_gravity="center"
+                            />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_gravity="center"
+                            android:layout_height="90dp"
+                            android:src="@drawable/batteries"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

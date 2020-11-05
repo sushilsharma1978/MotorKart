@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=F3:67:7A:5A:B0:B4:74:10:0A:C7:E0:2B:F3:F3:BD:6B:2E:7A:EE:05%3Bcom.app.root.motorkart
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    F3:67:7A:5A:B0:B4:74:10:0A:C7:E0:2B:F3:F3:BD:6B:2E:7A:EE:05
+
+    SHA-1 certificate fingerprint:
+    F3:67:7A:5A:B0:B4:74:10:0A:C7:E0:2B:F3:F3:BD:6B:2E:7A:EE:05
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+<!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCjLT5e4qiIXJAB2DsOjxw0lxPRqHmB6Yg</string>-->
+<!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBYmNLmnt5ixOudhSpUagjJUTO8udvVw9U</string>-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDgpCQ3cXieQc-U36FmHf8G_9gkW3TRW5Q</string>
+</resources>

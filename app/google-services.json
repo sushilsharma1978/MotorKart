@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "771424904344",
+    "firebase_url": "https://phonedetails-ecb5c.firebaseio.com",
+    "project_id": "phonedetails-ecb5c",
+    "storage_bucket": "phonedetails-ecb5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771424904344:android:b7a57e2f738f05b3959ced",
+        "android_client_info": {
+          "package_name": "com.app.root.motorkart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771424904344-jhv1ejbchvj4ete73qrci986enqvv4q0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.root.motorkart",
+            "certificate_hash": "42603dd806c39a7682f630cb24c06bc10d501e35"
+          }
+        },
+        {
+          "client_id": "771424904344-vdfg0bnjrsplejj94l659ipespvoc06u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGIeVBKbPyDOjwG3Tp_RHwD9UkVYa9pJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771424904344-vdfg0bnjrsplejj94l659ipespvoc06u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

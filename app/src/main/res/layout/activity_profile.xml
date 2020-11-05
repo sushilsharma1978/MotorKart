@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back_colour"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnn_login_profile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/darkorange"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:fontFamily="@font/lato_regular"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/orange"
+                android:layout_height="?attr/actionBarSize">
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.06"
+                    android:src="@drawable/back_arrow"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="My Profile"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.84"/>
+                <ImageView
+                    android:id="@+id/iv_editp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/edit_profile"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_logoutp"
+                    android:layout_width="0dp"
+                    android:visibility="gone"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.1"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icons_logout_rounded_up"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingBottom="15dp"
+                    android:background="@android:color/white"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.92">
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/upload_image"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/profileimage"
+                                    app:civ_border_width="3dp"
+                                    app:civ_border_color="@color/darkorange"/>
+                            </LinearLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:hint="First Name"
+                                    android:id="@+id/ed_first"
+                                    android:inputType="text"
+                                    android:paddingLeft="15dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textSize="16dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="45dp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingLeft="15dp"
+                                    android:id="@+id/ed_last"
+                                    android:hint="Last Name"
+                                    android:inputType="text"
+
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textSize="16dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="45dp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingLeft="15dp"
+                                    android:id="@+id/ed_emaill"
+                                    android:hint="Email"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textSize="16dp"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="45dp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingLeft="15dp"
+                                    android:id="@+id/ed_phone"
+                                    android:hint="Mobile"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textSize="16dp"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="45dp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingLeft="15dp"
+                                    android:id="@+id/ed_address"
+                                    android:hint="Address"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textSize="16dp"
+                                    android:inputType="textMultiLine"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="45dp"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:text="STATE"
+                                android:paddingLeft="15dp"
+                                android:fontFamily="@font/lato_regular"
+                                android:textSize="14dp"
+                                android:textColor="#737070"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Spinner
+                                    android:id="@+id/spinner_state"
+                                    android:layout_width="match_parent"
+                                    android:paddingLeft="15dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textSize="16dp"
+                                    android:visibility="gone"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="45dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.9"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:paddingTop="15dp"
+        android:id="@+id/tv_st"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:id="@+id/iv_state"
+        android:src="@drawable/border_star"
+        android:layout_height="45dp"
+        android:layout_weight="0.1"/>
+</LinearLayout>
+
+                            </FrameLayout>
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:background="#73706D"
+                                android:layout_height="0.07dp"/>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:text="CITY"
+                                android:fontFamily="@font/lato_regular"
+                                android:paddingLeft="15dp"
+                                android:textSize="14dp"
+                                android:textColor="#737070"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Spinner
+                                    android:id="@+id/spinner_city"
+                                    android:layout_width="match_parent"
+                                    android:paddingLeft="15dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textSize="16dp"
+                                    android:visibility="gone"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="45dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="15dp"
+                                    android:textSize="16dp"
+                                    android:textColor="@android:color/black"
+                                    android:id="@+id/tv_ci"/>
+                            </FrameLayout>
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:background="#73706D"
+                                android:layout_height="0.07dp"/>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:text="AREA"
+                                android:fontFamily="@font/lato_regular"
+                                android:paddingLeft="15dp"
+                                android:textSize="14dp"
+                                android:textColor="#737070"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Spinner
+                                    android:id="@+id/spinner_area"
+                                    android:layout_width="match_parent"
+                                    android:paddingLeft="15dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:textSize="16dp"
+                                    android:visibility="gone"
+                                    android:textColor="@android:color/black"
+                                    android:layout_height="45dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="15dp"
+                                    android:textSize="16dp"
+                                    android:textColor="@android:color/black"
+                                    android:id="@+id/tv_ar"/>
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:background="#73706D"
+                                android:layout_height="0.07dp"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="SAVE"
+                                android:visibility="gone"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/btn_updateprofile"
+                                android:textColor="@android:color/white"
+                                android:textSize="16dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textStyle="bold"
+                                android:background="@color/orange"/>
+                            <!--  <ProgressBar
+                                  android:id="@+id/pb_profile"
+                                  android:layout_width="30dp"
+                                  android:visibility="gone"
+                                  android:layout_height="30dp"
+                                  android:layout_gravity="center"/>-->
+                        </LinearLayout>
+                    </ScrollView>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.08">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/container"
+
+                        android:background="@color/back_colour"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/frame_container"
+                            android:layout_height="match_parent">
+
+                        </FrameLayout>
+
+                        <com.google.android.material.bottomnavigation.BottomNavigationView
+                            android:id="@+id/btnav_view0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+                            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+                            app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+                            app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+                            app:labelVisibilityMode="labeled"
+                            android:background="@color/orange"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:menu="@menu/bottom_nav_menu" />
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+      <!--  <item
+            android:id="@+id/nav_wallet"
+            android:title="WALLET" />-->
+
+        <item
+            android:id="@+id/nav_vehicles"
+            android:icon="@drawable/pickup_car"
+            android:title="MY VEHICLES" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/service_book"
+            android:title="MY SERVICES" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:visible="false"
+            android:title="MY ORDERS" />
+        <!--<item
+            android:id="@+id/nav_assurance"
+            android:title="PART ASSURANCE" />-->
+        <item
+            android:id="@+id/nav_pick"
+            android:visible="false"
+            android:title="PICK \u0026 DROP STATUS" />
+        <item
+            android:id="@+id/nav_road"
+            android:visible="false"
+
+            android:title="ROAD SIDE ASSISTANCE" />
+
+        <item
+            android:id="@+id/nav_rsa"
+            android:visible="false"
+            android:title="RSA STATUS" />
+      <item
+          android:id="@+id/nav_addstore"
+          android:visible="false"
+          android:icon="@drawable/add_store"
+          android:title="ADD STORE" />
+      <item
+          android:id="@+id/navigation_status"
+          android:icon="@drawable/booking_status"
+          android:title="CURRENT STATUS" />
+
+      <item
+          android:id="@+id/navigation_service"
+          android:visible="false"
+          android:icon="@drawable/service_book"
+          android:title="HISTORY" />
+      <item
+          android:id="@+id/nav_mystore"
+          android:icon="@drawable/add_store"
+          android:title="MY STORES" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="CONTACT US" />
+        <item
+            android:id="@+id/nav_about"
+android:icon="@drawable/info"
+            android:title="ABOUT US" />
+
+    </group>
+
+
+
+</menu>

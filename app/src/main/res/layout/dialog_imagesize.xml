@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="300dp"
+android:layout_height="200dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+android:background="@android:color/white"
+android:orientation="vertical" >
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:src="@drawable/error_image"
+    android:layout_gravity="center"
+    android:layout_height="40dp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:textColor="#555"
+    android:gravity="center"
+    android:fontFamily="@font/lato_bold"
+    android:text="Size of image should be less than 3 MB"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:text="OK"
+    android:id="@+id/btn_ok"
+    android:fontFamily="@font/lato_bold"
+    android:textSize="18dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/loginbutton_back"
+    android:textColor="@android:color/white"/>
+</LinearLayout>

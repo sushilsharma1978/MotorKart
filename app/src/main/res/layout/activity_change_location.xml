@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".ChangeLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/orange"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/iv_loc_back"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.06"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.74">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Change Location"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24">
+            <TextView
+                android:id="@+id/tv_currentloc"
+                android:layout_width="wrap_content"
+                android:text="Current Location"
+                android:textSize="10dp"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_location_on_white_24dp"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_location"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <ProgressBar
+            android:id="@+id/pb_ch_loc"
+            android:layout_width="30dp"
+            android:visibility="gone"
+            android:layout_height="30dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>
